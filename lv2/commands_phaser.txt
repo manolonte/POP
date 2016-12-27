@@ -1,0 +1,11 @@
+add http://invadarecords.com/plugins/lv2/phaser/mono 0
+connect system:capture_1 effect_0:in
+connect midi_controller:capture mod-host:midi_in
+connect effect_0:outL mod-host:monitor-in_1
+connect system:capture_1 system:playback_1
+midi_map 0 width 0 0 1 15
+midi_map 0 depth 0 1 0 100
+midi_map 0 cycle 0 16 1 500
+midi_map 0 phase 0 17 -180 180
+midi_map 0 lampDrive 0 18 0 10
+midi_map 0 lampL 0 2 0 4

@@ -1,0 +1,8 @@
+add http://drobilla.net/plugins/mda/Leslie 0
+connect system:capture_1 effect_0:right_in
+connect midi_controller:capture mod-host:midi_in
+connect effect_0:right_out mod-host:monitor-in_1
+param_set 0 mode 1
+param_set 0 lo_width 0.8
+param_set 0 speed 0.8
+midi_map 0 speed 0 16 0 1

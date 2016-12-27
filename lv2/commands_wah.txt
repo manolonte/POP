@@ -1,0 +1,10 @@
+add http://drobilla.net/plugins/fomp/autowah 0
+connect system:capture_1 effect_0:in
+connect midi_controller:capture mod-host:midi_in
+connect effect_0:out mod-host:monitor-in_1
+param_set 0 drive 10
+param_set 0 decay 0.5
+param_set 0 range 0.8
+param_set 0 freq 0.5
+param_set 0 mix 0.9
+midi_map 0 freq 0 0 0 1

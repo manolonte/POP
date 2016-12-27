@@ -1,0 +1,10 @@
+add http://invadarecords.com/plugins/lv2/compressor/mono 0
+connect system:capture_1 effect_0:in
+connect midi_controller:capture mod-host:midi_in
+connect effect_0:out mod-host:monitor-in_1
+midi_map 0 attack 0 0 0.1 0.75
+midi_map 0 release 0 1 1 5
+midi_map 0 gain 0 2 -6 36
+param_set 0 attack 0.65
+param_set 0 release 5
+param_set 0 gain 2

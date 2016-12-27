@@ -1,0 +1,13 @@
+add http://invadarecords.com/plugins/lv2/delay/mono 0
+connect system:capture_1 effect_0:in
+connect midi_controller:capture mod-host:midi_in
+connect effect_0:outL mod-host:monitor-in_1
+connect system:capture_1 system:playback_1
+param_set 0 delay1 0.2
+param_set 0 fb1 25
+midi_map 0 delay1 0 0 0 2
+midi_map 0 delay2 0 1 0 2
+midi_map 0 fb1 0 16 0 133
+midi_map 0 fb2 0 17 0 133
+midi_map 0 vol1 0 2 0 100
+midi_map 0 vol2 0 3 0 100

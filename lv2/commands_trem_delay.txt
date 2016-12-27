@@ -1,0 +1,21 @@
+add http://www.drowaudio.co.uk/audio/audio_plugins/tremolo 0 
+add http://invadarecords.com/plugins/lv2/delay/mono 1 
+connect system:capture_1 effect_0:lv2_audio_in_1
+connect effect_0:lv2_audio_out_2 effect_1:in
+connect midi_controller:capture mod-host:midi_in
+connect effect_1:outL mod-host:monitor-in_1
+connect effect_0:lv2_audio_out system:playback_1
+param_set 1 delay1 0.2
+param_set 1 fb1 25
+param_set 0 rate 0.25
+param_set 0 depth 0.90
+param_set 0 shape 0.09
+midi_map 0 rate 0 16 0 1
+midi_map 0 depth 0 0 0 1 
+midi_map 0 shape 0 17 0 1  
+midi_map 1 delay1 0 2 0 2
+midi_map 1 delay2 0 3 0 2
+midi_map 1 fb1 0 18 0 133
+midi_map 1 fb2 0 19 0 133
+midi_map 1 vol1 0 4 0 100
+midi_map 1 vol2 0 5 0 100

@@ -1,0 +1,11 @@
+add http://invadarecords.com/plugins/lv2/erreverb/mono 0
+connect system:capture_1 effect_0:in
+connect midi_controller:capture mod-host:midi_in
+connect effect_0:outL mod-host:monitor-in_1
+connect effect_1:outR mod-host:monitor-in_2
+param_set 0 roomHeight 10
+midi_map 0 roomHeight 0 0 3 30
+midi_map 0 roomWidth 0 1 3 100
+midi_map 0 roomLength 0 2 3 100
+midi_map 0 warmth 0 16 0 100
+midi_map 0 difussion 0 17 0 100

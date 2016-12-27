@@ -1,0 +1,10 @@
+add http://drobilla.net/plugins/fomp/triple_chorus 0
+connect system:capture_1 effect_0:in
+connect midi_controller:capture mod-host:midi_in
+connect effect_0:out1 mod-host:monitor-in_1
+param_set 0 delay 0.1 
+param_set 0 mod_freq_1 1
+param_set 0 mod_amp_1 1
+param_set 0 mod_freq_2 1
+param_set 0 mod_amp_2 2
+midi_map 0 mod_amp_2 0 0 0 10
